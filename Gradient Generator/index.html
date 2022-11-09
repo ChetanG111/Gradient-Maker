@@ -4,13 +4,33 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GradientSpace</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <div class="top_nav" id="top_nav">
+        <ul>
+            <li>GradientSpace - Make Cool Gradients</li>  
+        </ul>
+    </div>
     
     <div class="colorDis" id="colorDis"></div>
-    <input type="color" id="col1" onchange="set_color1()">
+        <ul class="colors">
+            <li><input type="color" id="col1" value="#75ffaa" onchange="grad()"><span>Color 1</span></li>
+            <li><input type="color" id="col2" value="#5fcc89" onchange="grad()"><span>Color 2</span></li>
+            <li><input type="color" id="col3" value="#52b176" onchange="grad()"><span>Color 3</span></li>
+            <li><span>Gradient Angle:</span><input type="number" value="180" id="angle" min="0" max="360"  onchange="grad()"></li>
+        </ul>
+
+    
+ 
+
+
+
     <script src="script.js"></script>
 </body>
 </html>

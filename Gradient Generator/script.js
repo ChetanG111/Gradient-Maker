@@ -1,8 +1,14 @@
-var r = document.querySelector(':root')
+var r = document.querySelector(':root');
+var dis = document.getElementById("colorDis");
+color1 = document.getElementById('col1').value;
+color2 = document.getElementById('col2').value;
+color3 = document.getElementById('col3').value;
 
-function set_color1(){
-    color1 = document.getElementById('col1')
-    col1 = color1.value
-    console.log(col1)
-    r.style.setProperty('--col1', col1)
+
+function grad(){
+    angle_input = document.getElementById('angle').value;
+    dis.style.backgroundImage =  "linear-gradient(" + angle + "deg"+ "," + color1 + "," + color2 + "," + color3 + ")";
+    dis.style.borderColor = color1;
+    console.log(dis.style.background);
+
 }
