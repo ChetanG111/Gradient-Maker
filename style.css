@@ -75,3 +75,20 @@ input[type=color]::-webkit-color-swatch-wrapper {
 .colors li span{
   margin: .3rem;
 }
+
+.colors li a{
+  text-decoration: none;
+  color: grey;
+  font-weight: 900;
+  border: grey solid 1px;
+  border-radius: .3rem;
+  padding: .3rem;
+  transition: .5s all;
+}
+
+.colors li a:hover{
+  color: #363636;
+  border: #363636 solid 1px;
+}
+
+
