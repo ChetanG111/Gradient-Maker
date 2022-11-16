@@ -5,10 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GradientSpace</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <link rel=
+    "stylesheet" href="style.css">
+
+    <link rel=
+    "preconnect" href="https://fonts.googleapis.com">
+
+    <link rel=
+    "preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href=
+    "https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    
+    <script src=
+    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+        </script>
+          
+        <script src=
+    "https://files.codepedia.info/files/uploads/iScripts/html2canvas.js">
+        </script>
+
 </head>
 <body>
 
@@ -20,9 +36,9 @@
     
     <div class="colorDis" id="colorDis"></div>
         <ul class="colors">
-            <li><input type="color" id="col1" value="#75ffaa" onchange="grad()" oninput="col1d.value = this.value"><output id = "col1d" onclick="cotoclip(this.value)">#75ffaa</output></li>
-            <li><input type="color" id="col2" value="#5fcc89" onchange="grad()" oninput="col2d.value = this.value"><output id = "col2d" onclick="cotoclip(this.value)">#5fcc89</output</li>
-            <li><input type="color" id="col3" value="#52b176" onchange="grad()" oninput="col3d.value = this.value"><output id = "col3d" onclick="cotoclip(this.value)">#52b176</output</li>
+            <li><input type="color" id="col1" value="#75ffaa" onchange="grad()" oninput="col1d.value = this.value"><output id = "col1d" onclick="copy_to_clip(this.value, this)">#75ffaa</output></li>
+            <li><input type="color" id="col2" value="#5fcc89" onchange="grad()" oninput="col2d.value = this.value"><output id = "col2d" onclick="copy_to_clip(this.value, this)">#5fcc89</output</li>
+            <li><input type="color" id="col3" value="#52b176" onchange="grad()" oninput="col3d.value = this.value"><output id = "col3d" onclick="copy_to_clip(this.value, this)">#52b176</output</li>
             <li><span>Gradient Angle:</span><input type="range" value="180" id="angle" min="0" max="360" oninput="disVal.value = this.value"  onchange="grad()"><output id="disVal">180</output></li>
             <li><a href = "#">Download</a></li>
         </ul>

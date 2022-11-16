@@ -22,7 +22,11 @@ function grad(){
 }
 
 //copy color hex code to clipboard
-function cotoclip(color_code){
+function copy_to_clip(color_code, display){
+    //copies the value of the color to the clipboard
     navigator.clipboard.writeText(color_code);
-    alert('Color copied to clipboard');
+    display.value = 'Copied';
+    //Waits for 250 milliseconds and then executes the line written in curly braces
+    setTimeout(() =>{display.value = color_code}, 250);
 }
+
