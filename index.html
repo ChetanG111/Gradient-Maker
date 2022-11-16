@@ -20,10 +20,10 @@
     
     <div class="colorDis" id="colorDis"></div>
         <ul class="colors">
-            <li><input type="color" id="col1" value="#75ffaa" onchange="grad()"><span>Color 1</span></li>
-            <li><input type="color" id="col2" value="#5fcc89" onchange="grad()"><span>Color 2</span></li>
-            <li><input type="color" id="col3" value="#52b176" onchange="grad()"><span>Color 3</span></li>
-            <li><span>Gradient Angle:</span><input type="range" value="180" id="angle" min="0" max="360"  onchange="grad()"></li>
+            <li><input type="color" id="col1" value="#75ffaa" onchange="grad()" oninput="col1d.value = this.value"><output id = "col1d" onclick="cotoclip(this.value)">#75ffaa</output></li>
+            <li><input type="color" id="col2" value="#5fcc89" onchange="grad()" oninput="col2d.value = this.value"><output id = "col2d" onclick="cotoclip(this.value)">#5fcc89</output</li>
+            <li><input type="color" id="col3" value="#52b176" onchange="grad()" oninput="col3d.value = this.value"><output id = "col3d" onclick="cotoclip(this.value)">#52b176</output</li>
+            <li><span>Gradient Angle:</span><input type="range" value="180" id="angle" min="0" max="360" oninput="disVal.value = this.value"  onchange="grad()"><output id="disVal">180</output></li>
             <li><a href = "#">Download</a></li>
         </ul>
 

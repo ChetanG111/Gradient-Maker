@@ -31,6 +31,10 @@ input[type=color]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
+input[type=range]{
+  width: 10rem;
+}
+
 .colorDis{
   width: 75vh;
   height: 75vh;
@@ -70,6 +74,18 @@ input[type=color]::-webkit-color-swatch-wrapper {
   display: flex;
   align-items: center;
   padding: .5rem;
+}
+
+
+.colors li output{
+  margin-left: .5rem;
+  width: 2.6rem;
+  font-family: 'Roboto Mono';
+  transition: all .5s;
+}
+
+.colors li output:active{
+  color: rgb(255, 255, 255);
 }
 
 .colors li span{

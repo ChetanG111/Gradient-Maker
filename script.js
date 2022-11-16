@@ -20,3 +20,9 @@ function grad(){
     dis.style.borderColor = color1;
     console.log(dis.style.background);
 }
+
+//copy color hex code to clipboard
+function cotoclip(color_code){
+    navigator.clipboard.writeText(color_code);
+    alert('Color copied to clipboard');
+}
