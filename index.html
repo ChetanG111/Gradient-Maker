@@ -5,47 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Gradients</title>
-    <link rel=
-    "stylesheet" href="style.css">
-
-    <link rel=
-    "preconnect" href="https://fonts.googleapis.com">
-
-    <link rel=
-    "preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href=
-    "https://fonts.googleapis.com/css2?family=Reem+Kufi+Ink&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
-    
-    <script src=
-    "https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-        </script>
-          
-        <script src=
-    "https://files.codepedia.info/files/uploads/iScripts/html2canvas.js">
-        </script>
-
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="input.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <h2 class="name">E-Gradients</h2>
+        </nav>
+    </header>
 
-    <div class="top_nav" id="top_nav">
-        <ul>
-            <li>E-Gradients - Make Cool Gradients</li>  
-        </ul>
-    </div>
-    
-    <div class="colorDis" id="colorDis"></div>
-        <ul class="colors">
-            <li><input type="color" id="col1" value="#75ffaa" onchange="grad()" oninput="col1d.value = this.value"><output id = "col1d" onclick="copy_to_clip(this.value, this)">#75ffaa</output></li>
-            <li><input type="color" id="col2" value="#5fcc89" onchange="grad()" oninput="col2d.value = this.value"><output id = "col2d" onclick="copy_to_clip(this.value, this)">#5fcc89</output</li>
-            <li><input type="color" id="col3" value="#52b176" onchange="grad()" oninput="col3d.value = this.value"><output id = "col3d" onclick="copy_to_clip(this.value, this)">#52b176</output</li>
-            <li><span>Gradient Angle:</span><input type="range" value="180" id="angle" min="0" max="360" oninput="disVal.value = this.value"  onchange="grad()"><output id="disVal">180</output></li>
-        </ul>
-
-    
- 
-
-
+    <section class="create">
+        <div class="disPar">
+            <div class="display"></div>
+        </div>
+        <div class="inpPar">
+            <div class="input">
+                <div class="color">
+                    <div><input type="color" class="col1" oninput="c1.value = this.value"><output id="c1" onclick="copy_to_clip(this.value, this)">#00000</output></div>
+                    <div><input type="color" class="col2" oninput="c2.value = this.value"><output id="c2" onclick="copy_to_clip(this.value, this)">#00000</output></div>
+                    <div><input type="color" class="col3" oninput="c3.value = this.value"><output id="c3" onclick="copy_to_clip(this.value, this)">#00000</output></div>
+                </div>
+                <input type="range" max="360" min="0" value="180" class="angle">
+            </div>
+        </div>
+    </section>
+    <section class="explore">
+        <h1>Explore Cool Gradients</h1>
+        
+        <div class="container">
+            <!-- <div class="card"><div class="cardDis"></div></div> -->
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to top, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to top, #fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);"></div><h3>Copy CSS</h3></div>
+            <div class="card"><div class="cardDis" style="background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);"></div><h3>Copy CSS</h3></div>
+            
+        </div>
+    </section>
 
     <script src="script.js"></script>
 </body>
