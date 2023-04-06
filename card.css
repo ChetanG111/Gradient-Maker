@@ -1,0 +1,48 @@
+.card
+{
+    background-color: rgba(255, 255, 255, .1);
+    height: 19rem;
+    width: 100%;
+    border-radius: 10px;
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card .cardDis
+{
+    margin: 0;
+    padding: 0;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+}
+
+.card h3
+{
+    color: white;
+    position: relative;
+    bottom: .1rem;
+    left: rem;
+}
+
+.card p
+{
+    font-size: 1.2rem;
+    color: white;
+    align-self: left;
+    font-style: italic;
+}
+
+.card:hover
+{
+    border: 1px solid gray;
+}
+
+.card:hover .cardDis
+{
+    transform: scale(1.05);
+}

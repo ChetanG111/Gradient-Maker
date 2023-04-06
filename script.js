@@ -18,7 +18,9 @@ h3Elements.forEach((h3) => {
     
     // Get the corresponding cardDis element and its background-image style value
     const cardDis = h3.parentNode.querySelector('.cardDis');
-    const bgImage = window.getComputedStyle(cardDis).getPropertyValue('background-image');
+    var bgImage = 'background-image: '
+    bgImage += window.getComputedStyle(cardDis).getPropertyValue('background-image');
+    bgImage += ';'
     
     // Copy the style value to the clipboard
     navigator.clipboard.writeText(bgImage);
@@ -27,3 +29,21 @@ h3Elements.forEach((h3) => {
 
   });
 });
+
+
+
+function update()
+{
+    var a =
+    'linear-gradient(' +
+    document.getElementById('angle').value +
+    'deg' +
+    document.getElementById('col1').value +
+    ',' +
+    document.getElementById('col2').value +
+    ',' +
+    document.getElementById('col3').value +
+    ')'
+  
+  console.log(a)
+}
